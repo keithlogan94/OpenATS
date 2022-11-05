@@ -1,3 +1,3 @@
-module github.com/keithlogan94/OpenATS
+module ats
 
 go 1.19
