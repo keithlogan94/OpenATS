@@ -9,7 +9,7 @@ type applican struct {
 }
 
 var applicans = []applican{
-	{ID: "2", Name: "Test Name 2", Email: "testemail1@test.com", Username: "Test1"},
+	{ID: "2", Name: "Test Name", Email: "testemail1@test.com", Username: "Test1"},
 	{ID: "1", Name: "Test Name 1", Email: "testemail1@test.com", Username: "Test2"},
 	{ID: "1", Name: "Test Name 3", Email: "testemail1@test.com", Username: "Test3"},
 	{ID: "1", Name: "Test Name 4", Email: "testemail1@test.com", Username: "Test4"},

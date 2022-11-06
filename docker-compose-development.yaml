@@ -10,9 +10,13 @@ services:
     volumes:
       - ./shell:/app
   ats:
-    build: ats
+    build:
+      context: ./ats
+      dockerfile: Dockerfile.developement
     image: ghcr.io/keithlogan94/openats/ats:v1.0.1
     ports: 
       - "8080:8080"
+    volumes:
+      - ./ats:/app
 
 

@@ -1,0 +1,16 @@
+# syntax=docker/dockerfile:1
+
+# Alpine is chosen for its small footprint
+# compared to Ubuntu
+FROM golang:1.16-alpine
+
+WORKDIR /app
+RUN apk update
+RUN apk add npm
+# COPY package.json .
+# COPY package-lock.json .
+# RUN npm i
+
+# RUN go get
+#CMD npx nodemon -e go,mod,sum --exec go run . --signal SIGTERM
+CMD go get && npx nodemon -e go --exec go run . --signal SIGTERM

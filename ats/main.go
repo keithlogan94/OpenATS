@@ -23,7 +23,7 @@ func getApplicans(c *gin.Context) {
 func init() {
 	start.StartServerHost = os.Getenv("START_SERVER_HOST")
 	if start.StartServerHost == "" {
-		start.StartServerHost = "localhost"
+		start.StartServerHost = "0.0.0.0"
 	}
 	start.StartServerPort = os.Getenv("START_SERVER_PORT")
 	if start.StartServerPort == "" {
@@ -36,6 +36,7 @@ func init() {
 }
 
 func main() {
+	fmt.Println("THIS IS A TEST")
 	fmt.Println("OpenATS Restful Backend Service")
 
 	router := gin.Default()
