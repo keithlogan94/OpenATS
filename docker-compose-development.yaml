@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  shell:
+    build:
+      context: ./shell
+      dockerfile: Dockerfile.developement
+    image: ghcr.io/keithlogan94/openats/shell:v1.0.1
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./shell:/app
+  ats:
+    build: ats
+    image: ghcr.io/keithlogan94/openats/ats:v1.0.1
+    ports: 
+      - "8080:8080"
+
+
