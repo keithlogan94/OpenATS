@@ -4,7 +4,7 @@ services:
     build: shell
     image: ghcr.io/keithlogan94/openats/shell:v1.0.1
     ports:
-      - "8000:5000"
+      - "3000:3000"
   ats:
     build: ats
     image: ghcr.io/keithlogan94/openats/ats:v1.0.1
