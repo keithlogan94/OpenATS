@@ -4,3 +4,9 @@
 
 # OpenATS
 Open Applicant Tracking System
+
+
+
+# How to Develop
+
+    docker-compose -f docker-compose-development.yaml up --build
