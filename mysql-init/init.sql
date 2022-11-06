@@ -1,0 +1,20 @@
+
+
+CREATE DATABASE ats;
+
+USE ats;
+
+CREATE TABLE IF NOT EXISTS applicans (
+    id INT(11) NOT NULL PRIMARY KEY AUTO_INCREMENT,
+    `name` VARCHAR(255) NOT NULL,
+    email  VARCHAR(255) NOT NULL,
+    username VARCHAR(255) NOT NULL
+);
+
+
+
+
+
+
+
+
